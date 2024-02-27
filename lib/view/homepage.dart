@@ -26,16 +26,5 @@ class _MyHomePageState extends State<MyHomePage> {
     tooltip: 'Increment',
      child: const Icon(Icons.add),
     ));
-      // Consumer<CounterProvider>(
-      //   builder: (context, counterProvider, child) { return Text('${counterProvider.counter}'); },
-      // ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: (){
-      //
-      //   },
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.add),
-      // ),
-    // This trailing comma makes auto-formatting nicer for build methods.;
   }
 }
