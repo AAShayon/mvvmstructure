@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:mvvmstructure/provider/counter_provider.dart';
 import 'package:mvvmstructure/view/homepage.dart';
 import 'package:provider/provider.dart';
+import 'di_container.dart' as di;
 
-void main() {
+void main() async {
+  await di.init();
   runApp(MultiProvider(providers: [
-    ChangeNotifierProvider<CounterProvider>(create: (context)=>CounterProvider())
+    ChangeNotifierProvider(create: (context)=>di.sl<CounterProvider>())
+   
   ],child: const MyApp()));
 }
 
